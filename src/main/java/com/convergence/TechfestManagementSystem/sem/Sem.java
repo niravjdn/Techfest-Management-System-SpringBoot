@@ -21,7 +21,6 @@ public class Sem {
 	}
 	
 	public Sem(){
-		
 	}
 	
 	public long getId() {
