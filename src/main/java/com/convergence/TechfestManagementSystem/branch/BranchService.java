@@ -22,8 +22,8 @@ public class BranchService {
 	public void addBranch(Branch branch) {
 		branchRepository.save(branch);
 	}
-	
-	
-	
-	
+
+	public void deleteBranch(Long id) {
+		branchRepository.deleteById(id);
+	}
 }
