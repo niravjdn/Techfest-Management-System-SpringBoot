@@ -9,5 +9,4 @@ public class TechfestManagementSystemApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TechfestManagementSystemApplication.class, args);
 	}
-
 }

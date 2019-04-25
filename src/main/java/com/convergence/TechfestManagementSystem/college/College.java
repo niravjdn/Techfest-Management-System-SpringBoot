@@ -1,4 +1,4 @@
-package com.convergence.TechfestManagementSystem.branch;
+package com.convergence.TechfestManagementSystem.college;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,21 +9,21 @@ import javax.persistence.Table;
 import org.hibernate.annotations.GeneratorType;
 
 @Entity
-@Table(name = "branch")
-public class Branch {
+@Table(name = "college")
+public class College {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	private String name;
 	
-	public Branch(long id, String name) {
+	public College(long id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
 	}
 	
-	public Branch(){
+	public College(){
 		
 	}
 	
