@@ -1,10 +1,13 @@
-package com.convergence.TechfestManagementSystem.sem;
+package com.convergence.TechfestManagementSystem.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.convergence.TechfestManagementSystem.model.Sem;
+import com.convergence.TechfestManagementSystem.repository.SemRepository;
 
 
 @Service

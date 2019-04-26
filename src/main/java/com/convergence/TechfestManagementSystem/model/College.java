@@ -1,4 +1,4 @@
-package com.convergence.TechfestManagementSystem.college;
+package com.convergence.TechfestManagementSystem.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

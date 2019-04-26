@@ -1,4 +1,4 @@
-package com.convergence.TechfestManagementSystem.department;
+package com.convergence.TechfestManagementSystem.controller;
 
 import java.util.List;
 
@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.convergence.TechfestManagementSystem.model.Department;
+import com.convergence.TechfestManagementSystem.service.DepartmentService;
 
 @RestController
 public class DepartmentController {
