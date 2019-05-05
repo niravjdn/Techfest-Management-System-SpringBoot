@@ -24,8 +24,8 @@ public class DepartmentController {
 	}
 	
 	@RequestMapping(value = "/departments", method = RequestMethod.POST)
-	public void addDepartment(@RequestBody Department college){
-		departmentService.addCollege(college);
+	public void addDepartment(@RequestBody Department department){
+		departmentService.addDepartment(department);
 	}
 	
 	@RequestMapping(value = "/departments/{id}", method = RequestMethod.DELETE)
