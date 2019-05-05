@@ -20,10 +20,17 @@ public class KeyGeneratedByProctorService {
 		return keyList;
 	}
 
+	public List<KeyGeneratedByProctor> getAllKeysByProctr(String proctorName) {
+		List<KeyGeneratedByProctor> keyList = new ArrayList<KeyGeneratedByProctor>();
+		keyProctorService.findByAddedBy(proctorName).forEach(keyList::add);;
+		return keyList;
+	}
+	
 	public void addKeyByProctor(String enrollmentNo) {
 		KeyGeneratedByProctor key = new KeyGeneratedByProctor();
 		key.setEnrollmentNo(enrollmentNo);
 		key.setAddedBy("Change it here");
+		key.setRegistered(false);
 		keyProctorService.save(key);
 	}
 
