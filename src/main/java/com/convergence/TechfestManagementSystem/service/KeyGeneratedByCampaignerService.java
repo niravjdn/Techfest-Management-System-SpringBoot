@@ -37,10 +37,15 @@ public class KeyGeneratedByCampaignerService {
 		key.setCollege(college);
 		key.setMobileNo(mobileNo);
 		key.setRegistered(false);
+		key.setAddedBy("Change it here");
 		key.setKey(randomAlphaNumeric(8));
 		keyCampaignerRepository.save(key);
 	}
 
+	public void deleteKeyByCampaigner(Long id) {
+		keyCampaignerRepository.deleteById(id);
+	}
+	
 	public static String randomAlphaNumeric(int count) {
 		final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#$+=*";
 		StringBuilder builder = new StringBuilder();
@@ -49,9 +54,5 @@ public class KeyGeneratedByCampaignerService {
 			builder.append(ALPHA_NUMERIC_STRING.charAt(character));
 		}
 		return builder.toString();
-	}
-
-	public void deleteKeyByCampaigner(Long id) {
-		keyCampaignerRepository.deleteById(id);
 	}
 }
